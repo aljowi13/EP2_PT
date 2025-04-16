@@ -1,3 +1,5 @@
+package Polynom;
+
 /**
  * This class represents a constant integer value.
  * PLEASE DO NOT CHANGE THIS FILE.

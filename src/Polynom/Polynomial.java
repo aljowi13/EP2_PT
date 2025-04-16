@@ -1,3 +1,5 @@
+package Polynom;
+
 /**
  * This polynomial is an expression of one variable in the form a⋅x⁰+b⋅x¹+c⋅x²+d⋅x³+e⋅x⁴ ... .
  * More generally, it is a sum of multiple monomials of the form c⋅xᵈ where 'c' is the constant

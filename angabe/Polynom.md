@@ -15,7 +15,7 @@
 
 ## Information zur Domäne
 
-Ein Polynom (`Polynomial`) ist ein mathematischer Ausdruck in einer Variablen 'x' in der Form
+Ein Polynom (`Polynom.Polynomial`) ist ein mathematischer Ausdruck in einer Variablen 'x' in der Form
 a⋅x⁰ + b⋅x¹ + c⋅x² + d⋅x³ + e⋅x⁴ ... . Es ist eine Summe mehrerer Monome (`monomial`), das sind
 Terme der Form c⋅xᵈ, wobei 'c' der konstante Koeffizient, 'x' die Variable und 'd' der
 konstante Grad des Monoms ist. 'c' und 'd' können jeden Wert annehmen (auch einen negativen Wert
@@ -35,52 +35,52 @@ Diese Gleichung lässt sich auch durch Paare ausdrücken:
 
 Die für diesen Test relevanten Dateien sind:
 
-* [IntConst](../src/IntConst.java)
-* [ConstConstTreeMap](../src/ConstConstTreeMap.java)
-* [IntConstQueue](../src/IntConstQueue.java)
-* [Polynomial](../src/Polynomial.java)
-* [ApplicationTest1](../src/ApplicationTest1.java)
-* [MCTest1](../src/MCTest1.java)
+* [Polynom.IntConst](../src/IntConst.java)
+* [Polynom.ConstConstTreeMap](../src/ConstConstTreeMap.java)
+* [Polynom.IntConstQueue](../src/IntConstQueue.java)
+* [Polynom.Polynomial](../src/Polynomial.java)
+* [Polynom.ApplicationTest1](../src/ApplicationTest1.java)
+* [Polynom.MCTest1](../src/MCTest1.java)
 
 Im Praxisteil des Tests sollen davon die hier aufgelisteten Dateien bearbeitet werden:
 
-* [ConstConstTreeMap](../src/ConstConstTreeMap.java)
-* [Polynomial](../src/Polynomial.java)
+* [Polynom.ConstConstTreeMap](../src/ConstConstTreeMap.java)
+* [Polynom.Polynomial](../src/Polynomial.java)
 
 ### Teilaufgabe 1 (maximal 25 Punkte)
 
 Absolvieren Sie den Multiple-Choice-Test. Um die MC Fragen zu beantworten, editieren Sie die
-Datei [MCTest1](../src/MCTest1.java) und befolgen Sie die Anweisungen aus den Kommentaren in der
-Datei. Wenn Sie [MCTest1](../src/MCTest1.java) ausführen, bekommen Sie eine Fehlermeldung falls
+Datei [Polynom.MCTest1](../src/MCTest1.java) und befolgen Sie die Anweisungen aus den Kommentaren in der
+Datei. Wenn Sie [Polynom.MCTest1](../src/MCTest1.java) ausführen, bekommen Sie eine Fehlermeldung falls
 inhaltlich relevante Textteile verändert wurden; ohne Fehler werden Ihre Antworten auf die Fragen
 aufgelistet.
 
 ### Teilaufgabe 2 (maximal 75 Punkte)
 
-Erzeugen Sie einen binären Suchbaum in dem Schlüssel vom Typ `IntConst` mit
-Werten vom Typ `IntConst` assoziiert werden. Ein solcher
-binärer Suchbaum wird durch die Klasse [ConstConstTreeMap](../src/ConstConstTreeMap.java)
+Erzeugen Sie einen binären Suchbaum in dem Schlüssel vom Typ `Polynom.IntConst` mit
+Werten vom Typ `Polynom.IntConst` assoziiert werden. Ein solcher
+binärer Suchbaum wird durch die Klasse [Polynom.ConstConstTreeMap](../src/ConstConstTreeMap.java)
 repräsentiert. Vervollständigen Sie diese Klasse. Erstellen Sie zu diesem Zweck auch eine eigene
 Knotenklasse und wählen Sie für diese Klasse einen geeigneten Namen. Die Ordnung der Schlüssel
-im binären Suchbaum entspricht der natürlichen Ordnung von `IntConst` und ist durch die Methoden
-`isEqual` und `lessThan` der Klasse [IntConst](../src/IntConst.java) bestimmt. Vervollständingen
-Sie neben [ConstConstTreeMap](../src/ConstConstTreeMap.java) auch die Klasse
-[Polynomial](../src/Polynomial.java).
-Alle anderen gegebenen Dateien sind bereits vollständig. Die Klassen [IntConst](../src/IntConst.java)
-und [IntConstQueue](../src/IntConstQueue.java) dürfen nicht verändert werden.
-[English translation: Create a binary search tree in which keys of type `IntConst` are associated
-with values of type `IntConst`. Such a binary search tree is represented by the class
-[ConstConstTreeMap](../src/ConstConstTreeMap.java). Complete this class. For this purpose, also
+im binären Suchbaum entspricht der natürlichen Ordnung von `Polynom.IntConst` und ist durch die Methoden
+`isEqual` und `lessThan` der Klasse [Polynom.IntConst](../src/IntConst.java) bestimmt. Vervollständingen
+Sie neben [Polynom.ConstConstTreeMap](../src/ConstConstTreeMap.java) auch die Klasse
+[Polynom.Polynomial](../src/Polynomial.java).
+Alle anderen gegebenen Dateien sind bereits vollständig. Die Klassen [Polynom.IntConst](../src/IntConst.java)
+und [Polynom.IntConstQueue](../src/IntConstQueue.java) dürfen nicht verändert werden.
+[English translation: Create a binary search tree in which keys of type `Polynom.IntConst` are associated
+with values of type `Polynom.IntConst`. Such a binary search tree is represented by the class
+[Polynom.ConstConstTreeMap](../src/ConstConstTreeMap.java). Complete this class. For this purpose, also
 create your own node class and choose an appropriate name for this class. The ordering of the keys
-in the binary search tree corresponds to the natural ordering of `IntConst` and is determined by
-the methods `isEqual` and `lessThan` of the class [IntConst](../src/IntConst.java). Also complete
-the class [Polynomial](../src/Polynomial.java).
-All other provided files are already complete. The classes [IntConst](../src/IntConst.java)
-and [IntConstQueue](../src/IntConstQueue.java) must not be modified.]
+in the binary search tree corresponds to the natural ordering of `Polynom.IntConst` and is determined by
+the methods `isEqual` and `lessThan` of the class [Polynom.IntConst](../src/IntConst.java). Also complete
+the class [Polynom.Polynomial](../src/Polynomial.java).
+All other provided files are already complete. The classes [Polynom.IntConst](../src/IntConst.java)
+and [Polynom.IntConstQueue](../src/IntConstQueue.java) must not be modified.]
 
-Die Klasse [ApplicationTest1](../src/ApplicationTest1.java) enthält Testfälle mit Sollausgaben als
+Die Klasse [Polynom.ApplicationTest1](../src/ApplicationTest1.java) enthält Testfälle mit Sollausgaben als
 Kommentare. Neben diesen Testfällen müssen auch alle Kommentare in den gefragten Klassen
-zutreffen. Die Klasse [ApplicationTest1](../src/ApplicationTest1.java) fließt nicht in die
+zutreffen. Die Klasse [Polynom.ApplicationTest1](../src/ApplicationTest1.java) fließt nicht in die
 Beurteilung ein, Sie können diese Datei nach belieben ändern.
 
 Bei einigen Methoden sind bei den Beschreibungen der Parameter unter `@param` Vorbedingungen

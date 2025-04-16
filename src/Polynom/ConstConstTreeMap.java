@@ -1,3 +1,5 @@
+package Polynom;
+
 /**
  * This data structure maps keys ('IntConst' objects) to values ('IntConst' objects).
  * It is implemented as a binary search tree where keys are ordered according to the order
@@ -15,15 +17,13 @@
 public class ConstConstTreeMap {
 
     //TODO: additional variables, constructors and methods must be private.
-    treeNode root;
+
     /**
      * Initializes 'this' as an empty map.
      */
     public ConstConstTreeMap() {
 
         //TODO: implement constructor.
-        root.setKey(null);
-        root.setValue(null);
     }
 
     /**
@@ -35,7 +35,6 @@ public class ConstConstTreeMap {
     public ConstConstTreeMap(ConstConstTreeMap map) {
 
         //TODO: implement constructor.
-
     }
 
     /**
@@ -47,24 +46,6 @@ public class ConstConstTreeMap {
      * @return the old value if the key already existed in this map, or 'null' otherwise.
      */
     public IntConst put(IntConst key, IntConst value) {
-
-        treeNode current = root;
-
-        if (value == null) return null;
-        if (current.getKey() == null) {
-            current.setKey(key);
-            current.setValue(value);
-            return null;
-        }
-        if (key.isEqual(current.getKey())) {
-            IntConst oldValue = current.getValue();
-            current.setValue(value);
-            return oldValue;
-        }
-        if (key.lessThan(current.getKey())) {
-            return null;
-        }
-
 
         //TODO: implement method.
         return null;
@@ -97,42 +78,3 @@ public class ConstConstTreeMap {
 }
 
 // TODO: define further classes, if needed (either here or in a separate file).
-class treeNode {
-
-    private IntConst value;
-    private IntConst key;
-    private treeNode left;
-    private treeNode right;
-
-    public void setValue(IntConst value) {
-        this.value = value;
-    }
-
-    public IntConst getValue() {
-        return value;
-    }
-
-    public IntConst getKey() {
-        return key;
-    }
-
-    public void setKey(IntConst key) {
-        this.key = key;
-    }
-
-    public treeNode getLeft() {
-        return left;
-    }
-
-    public treeNode getRight() {
-        return right;
-    }
-
-    public void setLeft(treeNode left) {
-        this.left = left;
-    }
-
-    public void setRight(treeNode right) {
-        this.right = right;
-    }
-}

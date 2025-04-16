@@ -1,4 +1,6 @@
- /**
+package Polynom;
+
+/**
  * A queue for 'IntConst' objects implemented as a singly linked list. The number of elements
  * of the queue is not limited. The queue may also contain entries of 'null'.
  * PLEASE DO NOT CHANGE THIS FILE.
